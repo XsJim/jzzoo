@@ -362,6 +362,11 @@ pre[data-line] .line-highlight[data-end]:after {
 <li><a href="#%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82-%E6%A8%A1%E6%9D%BF">&#x77E9;&#x9635;&#x5FEB;&#x901F;&#x5E42; &#x6A21;&#x677F;</a></li>
 </ul>
 </li>
+<li><a href="#%E6%89%A9%E5%B1%95%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95%E4%B8%8E%E4%BA%8C%E5%85%83%E4%B8%80%E6%AC%A1%E6%96%B9%E7%A8%8B%E7%9A%84%E6%95%B4%E6%95%B0%E8%A7%A3">&#x6269;&#x5C55;&#x6B27;&#x51E0;&#x91CC;&#x5F97;&#x7B97;&#x6CD5;&#x4E0E;&#x4E8C;&#x5143;&#x4E00;&#x6B21;&#x65B9;&#x7A0B;&#x7684;&#x6574;&#x6570;&#x89E3;</a>
+<ul>
+<li><a href="#%E6%89%A9%E5%B1%95%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95%E6%B1%82%E8%A7%A3%E4%BA%8C%E5%85%83%E4%B8%80%E6%AC%A1%E6%96%B9%E7%A8%8B-%E6%A8%A1%E6%9D%BF">&#x6269;&#x5C55;&#x6B27;&#x51E0;&#x91CC;&#x5F97;&#x7B97;&#x6CD5;&#x6C42;&#x89E3;&#x4E8C;&#x5143;&#x4E00;&#x6B21;&#x65B9;&#x7A0B; &#x6A21;&#x677F;</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6">&#x7EC4;&#x5408;&#x6570;&#x5B66;</a>
@@ -919,6 +924,44 @@ c100.7 8.3 195.3 44 280 108 55.3 42 101.7 93 139 153l9 14c2.7-4 5.7-8.7 9-14
         a<span class="token punctuation">.</span>m<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
         a<span class="token punctuation">.</span>m<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
         cout<span class="token operator">&lt;&lt;</span><span class="token function">MPow</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre><h4 class="mume-header" id="%E6%89%A9%E5%B1%95%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95%E4%B8%8E%E4%BA%8C%E5%85%83%E4%B8%80%E6%AC%A1%E6%96%B9%E7%A8%8B%E7%9A%84%E6%95%B4%E6%95%B0%E8%A7%A3">&#x6269;&#x5C55;&#x6B27;&#x51E0;&#x91CC;&#x5F97;&#x7B97;&#x6CD5;&#x4E0E;&#x4E8C;&#x5143;&#x4E00;&#x6B21;&#x65B9;&#x7A0B;&#x7684;&#x6574;&#x6570;&#x89E3;</h4>
+
+<h5 class="mume-header" id="%E6%89%A9%E5%B1%95%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97%E7%AE%97%E6%B3%95%E6%B1%82%E8%A7%A3%E4%BA%8C%E5%85%83%E4%B8%80%E6%AC%A1%E6%96%B9%E7%A8%8B-%E6%A8%A1%E6%9D%BF">&#x6269;&#x5C55;&#x6B27;&#x51E0;&#x91CC;&#x5F97;&#x7B97;&#x6CD5;&#x6C42;&#x89E3;&#x4E8C;&#x5143;&#x4E00;&#x6B21;&#x65B9;&#x7A0B; &#x6A21;&#x677F;</h5>
+
+<blockquote>
+<p>2020-3-16 &#x1F423; &#x6574;&#x7406;</p>
+</blockquote>
+<pre data-role="codeBlock" data-info="cpp" class="language-cpp"><span class="token macro property">#<span class="token directive keyword">include</span><span class="token string">&lt;bits/stdc++.h&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token comment">//&#x6EE1;&#x8DB3;ax + by = gcd(a,b) &#x53EF;&#x6C42;&#x5F97;&#x4E00;&#x4E2A;&#x70B9;(x0,y0);</span>
+<span class="token keyword">int</span>  <span class="token function">extend_gcd</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">&amp;</span>x<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">&amp;</span>y<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>b <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> a<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">int</span> d <span class="token operator">=</span> <span class="token function">extend_gcd</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span>a<span class="token operator">%</span>b<span class="token punctuation">,</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> tmp <span class="token operator">=</span> x<span class="token punctuation">;</span>
+    x <span class="token operator">=</span> y<span class="token punctuation">;</span>
+    y <span class="token operator">=</span> tmp <span class="token operator">-</span> <span class="token punctuation">(</span>a <span class="token operator">/</span> b<span class="token punctuation">)</span> <span class="token operator">*</span> y<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> d<span class="token punctuation">;</span> <span class="token comment">//&#x5F97;&#x5230;a&#xFF0C;b&#x7684;&#x6700;&#x5927;&#x516C;&#x56E0;&#x6570;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">int</span> a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%d%d%d&quot;</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>a<span class="token punctuation">,</span><span class="token operator">&amp;</span>b<span class="token punctuation">,</span><span class="token operator">&amp;</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//ax + by = c  &#x6EE1;&#x8DB3;ax + by = gcd(a,b)</span>
+    <span class="token keyword">int</span> x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> d<span class="token punctuation">;</span>
+    d <span class="token operator">=</span> <span class="token function">extend_gcd</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//&#x5F97;&#x5230;a&#xFF0C;b&#x7684;&#x6700;&#x5927;&#x516C;&#x56E0;&#x6570;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>c <span class="token operator">%</span> d <span class="token operator">!=</span> <span class="token number">0</span> <span class="token punctuation">)</span> <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;No solution!\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        a <span class="token operator">/=</span> d<span class="token punctuation">,</span> b <span class="token operator">/=</span> d<span class="token punctuation">,</span> c <span class="token operator">/=</span> d<span class="token punctuation">;</span>
+        x <span class="token operator">*=</span> c<span class="token punctuation">,</span> y <span class="token operator">*=</span> c<span class="token punctuation">;</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;&#x7279;&#x89E3;: %d %d\n&quot;</span><span class="token punctuation">,</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;&#x4E00;&#x4E2A;&#x901A;&#x89E3;: %d %d\n&quot;</span><span class="token punctuation">,</span>x<span class="token operator">+</span>b<span class="token punctuation">,</span>y<span class="token operator">-</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
